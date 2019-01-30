@@ -8,4 +8,12 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Naps\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="Views\New Folder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Naps\naps.css" />
+  </ItemGroup>
 </Project>

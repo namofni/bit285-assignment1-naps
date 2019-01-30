@@ -1,0 +1,39 @@
+﻿@model bit285assignment1naps.Models.User
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<h1>New Account Created</h1>
+<fieldset>
+    <form>
+       <!--These labels is for me to see what model data is carried over from view to view and so far, not to all views :( -->
+        <div>
+            <label asp-for="firstName">First Name: </label>
+            @Model.firstName
+        </div>
+        <div>
+            <label asp-for="lastName">Last Name: </label>
+            @Model.lastName
+        </div>
+        <div>
+            <label asp-for="program">Program: </label>
+            @Model.program
+        </div>
+        <div>
+            <label asp-for="email">Username: </label>
+            @Model.email
+        </div>
+        <div>
+            <label asp-for="email">Password: </label>
+            @Model.password
+        </div>
+        <div>
+            <!--<input type="button" onclick="location.href='/login.html';" value="Go to Login" />-->
+            <!--<input type="submit" value="Go to Login" />-->
+            <a asp-action="Login">Login</a>
+            <input type="button" value="Reset" />
+        </div>
+    </form>
+</fieldset>
+
