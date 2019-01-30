@@ -1,4 +1,5 @@
-﻿@model bit285assignment1naps.Models.User
+﻿<!--From Wing S Cho BIT 285 Winter 2019-->
+@model bit285assignment1naps.Models.User
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "_Layout";
@@ -7,7 +8,7 @@
 <h1>New Account Created</h1>
 <fieldset>
     <form>
-       <!--These labels is for me to see what model data is carried over from view to view and so far, not to all views :( -->
+        <!--These labels is for me to see what model data is carried over from view to view and so far, not to all views :( -->
         <div>
             <label asp-for="firstName">First Name: </label>
             @Model.firstName

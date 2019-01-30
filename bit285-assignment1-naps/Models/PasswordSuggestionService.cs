@@ -1,4 +1,5 @@
-﻿using System;
+﻿//From Wing S Cho BIT 285 Winter 2019
+using System;
 namespace bit285assignment1naps.Models
 {
     public class PasswordSuggestionService
